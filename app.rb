@@ -40,20 +40,4 @@ end
 
 
 
-	# def store_word (secret_word)
-	# 	secret_word = "secret_word"
-	# 	letters_in_secret_word = []
-	# 	secret_word.each_char do |letter|
-	# 	letters_in_secret_word.push(letter)
-	# 	end
-	# end
-
-	# def check_letter?(word, letter)
-	# 	store_word(word)
-	# 	if letters_in_secret_word.include? letter
-	# 		true
-	# 	else
-	# 		false
-	# 	end
-
-	# end
+	
