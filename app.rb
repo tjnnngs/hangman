@@ -1,29 +1,59 @@
-	def get_word?(secret_word) 
-		if secret_word.class == String
+def get_word?(secret_word) 
+	if secret_word.class == String
 		true
-		else
+	else
 		false
 	end
 end
 
-	number_of_letters_in_secret_word = 0
-	def get_secret_word_length(secret_word)
-		number_of_letters_in_secret_word = secret_word.length
-	end
+def get_secret_word_length(secret_word)
+	number_of_letters_in_secret_word = secret_word.length
+end
 
-	def store_word (secret_word)
-		secret_word = "secret_word"
-		letters_in_secret_word = []
-		secret_word.each_char do |letter|
-		letters_in_secret_word.push(letter)
+def check_letter?(secret_word, letter)
+	if secret_word.include? letter
+		true
+	else 
+		false
 	end
 end
 
-	def check_letter?(letter)
-		if letters_in_secret_word.include(letter)
-			true
-		else
-			false
-		end
+def push_guess_into(letter)
+	correct_letter = []
+	wrong_letter = []
+	if check_letter?() == true
+		correct_letter.push letter
+	else 
+		wrong_letter.push letter
 
 	end
+
+end
+
+def play_hangman(secret_word, letter)
+	check_letter?(secret_word,letter)
+	push_guess_into(letter)
+end
+
+
+
+
+
+
+	# def store_word (secret_word)
+	# 	secret_word = "secret_word"
+	# 	letters_in_secret_word = []
+	# 	secret_word.each_char do |letter|
+	# 	letters_in_secret_word.push(letter)
+	# 	end
+	# end
+
+	# def check_letter?(word, letter)
+	# 	store_word(word)
+	# 	if letters_in_secret_word.include? letter
+	# 		true
+	# 	else
+	# 		false
+	# 	end
+
+	# end
