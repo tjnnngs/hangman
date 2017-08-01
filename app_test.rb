@@ -32,23 +32,5 @@ class TestHangman < Minitest::Test
 		assert_equal(3, get_secret_word_length(secret_word))
 	end
 
-	def test_assert_that_f_is_in_the_word
-		secret_word = "fox"
-		letter = "f"
-		assert_equal(true, check_letter?(secret_word, letter))
 
-	end
-
-	def test_assert_that_z_is_in_the_word
-		secret_word = "fox"
-		letter = "z"
-		assert_equal(false, check_letter?(secret_word, letter))
-	end
-
-	def test_assert_f_for_fox_playing_hangman
-		secret_word = "fox"
-		letter = "f"
-		assert_equal(["f"], play_hangman(secret_word, letter))
-	end
-	
 end
